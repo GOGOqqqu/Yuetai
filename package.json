@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "uview-ui": "^2.0.31"
+  },
+  "devDependencies": {
+    "sass-loader": "^10.4.1"
+  }
+}

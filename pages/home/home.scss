@@ -1,0 +1,502 @@
+.nav {
+		width: 100%;
+
+         // 头部导航栏 
+		 .lists {
+			 width: 100%;
+			 height: 100rpx;
+			 position: fixed;
+			 top: 44px;
+			 background-color: #fff;
+			 z-index: 10;
+		 }
+		 .lists::after {
+			 width: 100%;
+			 height: 3rpx;
+			 position: absolute;
+			 bottom: 3rpx;
+			 background-color: #dd001b;
+			 // border-color: #ccc;
+		 }
+		.bar {
+			// position: fixed;
+			// top: 0;
+			display: flex;
+			justify-content: space-between;
+			align-content: space-between;
+			text-align: center;
+			height: 100rpx;
+			line-height: 100rpx;
+
+			.barList {
+				width: 33.3333%;
+				height: 100%;
+				position: relative;
+				color: rgb(176, 177, 179);
+			}
+			.chun::after {
+				content: "";
+				position: absolute;
+				bottom: 6rpx;
+				right: 0;
+				left: 0;
+				margin: 0 auto;
+				width: 25%;
+				height: 6rpx;
+				background-color: #dd001b;
+			}
+		}
+		
+		 // 推荐音乐页 
+		.recommend {
+			 width: 100%;
+			 margin-top: 100rpx;
+			 
+			 //标题
+			 .text1 {
+				
+				 display: flex;
+				 height: 100rpx;
+				 justify-content: flex-start;
+				 align-content: space-around;
+				 color: #333;
+				 align-items: center;
+			     flex-wrap: wrap;
+				 
+				 .red {
+					height: 30%;
+					width: 8rpx;
+					background-color: #dd001b;
+					margin-right: 16rpx;
+					margin-left: 6rpx;
+				 }
+			 }
+			 
+			 // 编辑推荐 内容
+			 .recommend-text {
+				 // height: 688rpx;
+				 padding: 0px 10rpx;
+				 display: flex;
+				 align-content: flex-end;
+			     flex-wrap: wrap;
+				 justify-content: space-between;
+				 .div {
+					 width: 31%;
+					 height: 338rpx;
+					 position: relative;
+					 // 歌单图片
+					 .img {
+						 width: 100%;
+						 height: 250rpx;
+						 
+						 image {
+							 width: 100%;
+							 height: 250rpx;
+						       }
+						   }
+					 .textss {
+						 color: #333;
+						 width: 100%;
+						 height: 70rpx;
+						 font-size: 26rpx;
+						 overflow: hidden;
+						 white-space: normal;
+						 text-overflow: ellipsis;
+					     
+				     }
+					 .text-top {
+					     width: 95%;
+					     height: 40rpx;
+						 padding-right: 5%;
+						 line-height: 40rpx;
+					     color: #fff;
+					     position: absolute;
+					     top: 0;
+						 background-color: rgba(204, 213, 208, 0.5);
+						 text-align: right;
+						 font-size: 26rpx;
+						.ic {
+							float: right;
+							height: 100%;
+							height: 40rpx;
+							margin-right: 6rpx;
+						} 
+							
+						.zi {
+							height: 40rpx;
+							float: right;
+						}
+					 }
+				 }
+			     
+
+			 }
+		  
+		      // 最新音乐的 内容
+			  .recommend-text1 {
+				  padding: 0rpx 18rpx ;
+				  
+				  .newests {
+					  width: 100%;
+					  height: 100rpx;
+					  margin-bottom: 10rpx;
+					  position: relative;
+					  
+					  .authors {
+						  font-size: 34rpx;
+						  color: #333;
+						  height: 60rpx;
+						  line-height: 60rpx;
+						  width: 85%;
+						  overflow: hidden;
+						  text-overflow: ellipsis;
+						  white-space: nowrap;
+					  }
+					  
+					  .SongTitles {
+						  width: 90%;
+						  height: 40rpx;
+						  font-size: 24rpx;
+						  color: #888888;
+
+						  
+						  .img1 {
+							  width: 10%;
+							  float: left;
+							  height: 40rpx;
+							  background-image: url(../../static/tutu.png);
+							  background-position-y: 5rpx;
+							  background-size: 850%,850%;
+							  background-position-x: 4rpx;
+						  }
+						  .left {
+							  width: 90%;
+							  overflow: hidden;
+							  text-overflow: ellipsis;
+							  white-space: nowrap;
+							  word-break: normal;
+							  float: left;
+						  }
+					  }
+					  .img2 {
+						  position: absolute;
+						  right: 0;
+						  top: 0;
+						  width: 7%;
+						  height: 100rpx;
+						  overflow: hidden;
+						  background-image: url(../../static/tutu.png);
+						  background-position-x: -54rpx;
+						  background-position-y: 28rpx;
+						  background-size: 750%,750%;
+					  }
+				  }
+			 
+			  }
+		 }
+
+
+		// 热歌榜
+		.songs {
+			width: 100%;
+			// padding: 60rpx 0rpx;
+			margin-top: 104rpx;
+			.songs-tou {
+				width: 95%;
+				height: 290rpx;
+				padding-left: 5%;
+                padding-top: 50rpx;
+				background-image: url(../../static/gii.png);
+				.songs-img {
+					width: 50%;
+					height: 60%;
+					overflow: hidden;
+					background-image: url(../../static/tutu.png);
+					background-size: 110%,100%;
+					background-position-y: 170rpx;					            background-position-x: -34rpx;					
+				}
+				.riqi {
+					color: #fff;
+					margin-left: 34rpx;
+					height: 36rpx;
+					margin-top: 10rpx;
+					font-size: 26rpx;
+				}
+			}
+			
+			.recommend-text1 {
+				padding: 0rpx 18rpx ;
+				
+				.newests {
+				  color: #dd001b;
+				  width: 100%;
+				  height: 100rpx;
+				  margin-bottom: 10rpx;
+				  position: relative;
+				  
+				  .newests-left {
+					  float: left;
+					  width: 9%;
+					  text-align: center;
+					  margin-right: 3%;
+					  height: 100%;
+					  line-height: 100rpx;
+					  font-size: 40rpx;
+				  }
+
+				  
+				  .newests-right {
+				  .authors {
+					  float: left;
+					  font-size: 34rpx;
+					  color: #333;
+					  height: 60rpx;
+					  line-height: 60rpx;
+					  width: 80%;
+					  overflow: hidden;
+					  text-overflow: ellipsis;
+					  white-space: nowrap;
+				  }
+
+				  .SongTitles {
+					  float: left;
+					  width: 80%;
+					  height: 40rpx;
+					  font-size: 24rpx;
+					  color: #888888;
+					  
+					  .img1 {
+						  width: 10%;
+						  float: left;
+						  height: 40rpx;
+						  background-image: url(../../static/tutu.png);
+						  background-position-y: 5rpx;
+						  background-size: 850%,850%;
+						  background-position-x: 4rpx;
+					  }
+					  .left {
+						  width: 90%;
+						  overflow: hidden;
+						  text-overflow: ellipsis;
+						  white-space: nowrap;
+						  word-break: normal;
+						  float: left;
+					  }
+				  }}
+				  .img2 {
+					  position: absolute;
+					  right: 0;
+					  top: 0;
+					  width: 7%;
+					  height: 100rpx;
+					  overflow: hidden;
+					  background-image: url(../../static/tutu.png);
+					  background-position-x: -54rpx;
+					  background-position-y: 28rpx;
+					  background-size: 750%,750%;
+				  }
+				}
+					
+				.newests:nth-child(n + 4) {
+					color: #999;
+				}
+			}
+		}
+		
+		// 搜索页
+		.search {
+			width: 100%;
+			
+			.search-head {
+				margin-top: 106rpx;
+				padding-top: 20rpx;
+			}
+			.ren {
+				margin-top: 9px;
+				width: 94%;
+				margin-left: 3%;
+				font-size: 28rpx;
+				padding: 6rpx 0rpx;
+				height: 42rpx;
+			}
+				
+			.list {
+				padding: 0;
+				list-style: none;
+				margin-top: 20rpx;
+				display: flex;
+				flex-wrap: wrap;
+				
+				li {
+					padding: 6rpx 26rpx;
+					border-radius: 999px;
+					border: 4rpx solid rgb(176, 177, 179);
+					margin-left: 22rpx;
+					margin-bottom: 16rpx;
+					font-size: 28rpx;
+					color: #333;
+				}
+			}
+			.content {
+				padding: 0 3%;
+				width: 94%;
+				
+				.content-content {
+					padding: 24rpx 0;
+					height: 42rpx;
+					position: relative;
+					.content-img {
+						height: 42rpx;
+						width: 42rpx;
+						float: left;
+						.img {
+						height: 42rpx;
+						width: 42rpx;	
+						}
+					}
+					.content-text {
+						float: left;
+						margin-left: 22rpx;
+					}
+					.wrong {
+						float: right;
+						margin-right: 22rpx;
+					}
+				}
+				.content-content::after {
+					content: '';
+					width: 100% ;
+					position: absolute;
+					left: 64rpx;
+					height: 3rpx;
+					background-color: #d3d4da;
+					bottom: 0rpx;
+				}
+			}
+		    
+			.show-content {
+				margin-top: 20rpx;
+				 width: 94%;
+				 padding: 0 3%;
+				 border-top: 1px solid rgb(170, 174, 179);
+				 background-color: white;
+				 
+				 .content-top {
+				    height: 80rpx;
+				    margin-left: 20rpx;
+				    padding-right: 20rpx;
+				    font-size: 30rpx;
+				    line-height: 80rpx;
+				    color: #507daf;
+					
+					}
+					
+				.content-bottom {
+					margin-left: 20rpx;
+					font-size: 30rpx;
+					
+					.top {
+						line-height: 80rpx;
+						padding-right: 20rpx;
+						font-size: 30rpx;
+						line-height: 90rpx;
+						color: #333;
+						display: flex;
+						align-items: center;
+							
+						.hn {
+						   width: 32rpx;
+						   height: 32rpx;
+						}
+						.text {
+							width: 550rpx;
+							margin-left: 20rpx;
+						}	
+					}
+				 }
+				 
+			  .recommend-text1 {
+				  margin-top: 0px;
+				  padding: 0rpx 18rpx ;
+				  
+				  .newests {
+					  width: 100%;
+					  height: 100rpx;
+					  margin-bottom: 10rpx;
+					  position: relative;
+					  
+					  .authors {
+						  font-size: 34rpx;
+						  color: #333;
+						  height: 60rpx;
+						  line-height: 60rpx;
+						  width: 85%;
+						  overflow: hidden;
+						  text-overflow: ellipsis;
+						  white-space: nowrap;
+					  }
+					  
+					  .SongTitles {
+						  width: 90%;
+						  height: 40rpx;
+						  font-size: 24rpx;
+						  color: #888888;
+
+						  
+						  .img1 {
+							  width: 10%;
+							  float: left;
+							  height: 40rpx;
+							  background-image: url(../../static/tutu.png);
+							  background-position-y: 5rpx;
+							  background-size: 850%,850%;
+							  background-position-x: 4rpx;
+						  }
+						  .left {
+							  width: 90%;
+							  overflow: hidden;
+							  text-overflow: ellipsis;
+							  white-space: nowrap;
+							  word-break: normal;
+							  float: left;
+						  }
+					  }
+					  .img2 {
+						  position: absolute;
+						  right: 0;
+						  top: 0;
+						  width: 7%;
+						  height: 100rpx;
+						  overflow: hidden;
+						  background-image: url(../../static/tutu.png);
+						  background-position-x: -54rpx;
+						  background-position-y: 28rpx;
+						  background-size: 750%,750%;
+					  }
+				  }
+			 
+			  }
+			  
+			  
+			 }
+		
+		}
+
+		.shows {
+			display: block !important;
+		}
+		.active{
+			display: none;
+		}
+		.yi {
+			display: none;
+		}
+		.chun {
+			font-size: 40rpx !important;
+			color: #000 !important;
+		}
+		.actives{
+			display: none;
+		}
+
+	}

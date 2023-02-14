@@ -1,0 +1,103 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+
+		{
+			//主页 
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "小乐台",
+				"enablePullDownRefresh": false
+			}
+
+		},
+	    {
+			//搜索
+            "path" : "pages/SearchPage/SearchPage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "小乐台",
+                "enablePullDownRefresh": false
+            }
+            
+        },	   
+		{
+			//音乐播放页
+            "path" : "pages/song/song",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "小乐台",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+			//歌单页
+		    "path" : "pages/SongPage/SongPage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "小乐台",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#f37d0f",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+	// "tabBar": {
+	// 	"list": [
+	// 		// {
+	// 		// 	"pagePath": "pages/home/home",
+	// 		// 	"text": "首页",
+	// 		// 	"iconPath": "static/home.png",
+	// 		// 	"selectedIconPath": "static/home_active.png"
+	// 		// },
+	// 		// {
+	// 		// 	"pagePath": "pages/my/my",
+	// 		// 	"text": "我的",
+	// 		// 	"iconPath": "static/my.png",
+	// 		// 	"selectedIconPath": "static/my_active.png"
+	// 		// }]
+	// 		// {
+	// 		// 	//主页 推荐音乐
+ // 		// 		"path": "pages/home/home",
+	// 		// 	"text": "推荐音乐",
+	// 		// 	"style": {
+	// 		// 		"navigationBarTitleText": "小乐台",
+	// 		// 		"enablePullDownRefresh": true
+	// 		// 	}
+			
+	// 		// }
+	// 		// ,{
+	// 		// 	//热歌榜
+	// 		//     "path" : "pages/HotSong/HotSong",  
+	// 		// 	"text": "热歌榜",
+	// 		//     "style" :                                                                                    
+	// 		//     {
+	// 		//         "navigationBarTitleText": "小乐台",
+	// 		//         "enablePullDownRefresh": false
+	// 		//     }
+			    
+	// 		// },
+	// 		// {
+	// 		// 	//搜索
+	// 		//     "path" : "pages/SearchPage/SearchPage",
+	// 		// 	"text": "搜索",
+	// 		//     "style" :                                                                                    
+	// 		//     {
+	// 		//         "navigationBarTitleText": "小乐台",
+	// 		//         "enablePullDownRefresh": false
+	// 		//     }
+			    
+	// 		// }
+	// }
+
+}
